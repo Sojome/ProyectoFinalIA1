@@ -1,0 +1,191 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/user/ontologies/2020/1/Sensores#"
+     xml:base="http://www.semanticweb.org/user/ontologies/2020/1/Sensores"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:Sensores="http://www.semanticweb.org/user/ontologies/2020/1/Sensores#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/Sensores"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/1/Sensores#codigo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/Sensores#codigo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2020/1/Sensores#Luz_Exterior"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2020/1/Sensores#Potencial_Foco"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2020/1/Sensores#Temperatura"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/1/Sensores#estado -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/Sensores#estado">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2020/1/Sensores#Luz_Exterior"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2020/1/Sensores#Potencial_Foco"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2020/1/Sensores#Temperatura"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/1/Sensores#Luz_Exterior -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/Sensores#Luz_Exterior">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2020/1/Sensores#Sensores"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/1/Sensores#Potencial_Foco -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/Sensores#Potencial_Foco">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2020/1/Sensores#Sensores"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/1/Sensores#Sensores -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/Sensores#Sensores"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/1/Sensores#Temperatura -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/Sensores#Temperatura">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2020/1/Sensores#Sensores"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/1/Sensores#foco1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/Sensores#foco1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2020/1/Sensores#Potencial_Foco"/>
+        <codigo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">f1</codigo>
+        <estado rdf:datatype="http://www.w3.org/2001/XMLSchema#string">apagado</estado>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/1/Sensores#foco2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/Sensores#foco2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2020/1/Sensores#Potencial_Foco"/>
+        <codigo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">f2</codigo>
+        <estado rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medio encendida</estado>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/1/Sensores#foco3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/Sensores#foco3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2020/1/Sensores#Potencial_Foco"/>
+        <codigo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">f3</codigo>
+        <estado rdf:datatype="http://www.w3.org/2001/XMLSchema#string">encendida</estado>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/1/Sensores#luz1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/Sensores#luz1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2020/1/Sensores#Luz_Exterior"/>
+        <codigo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">l1</codigo>
+        <estado rdf:datatype="http://www.w3.org/2001/XMLSchema#string">baja</estado>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/1/Sensores#luz2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/Sensores#luz2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2020/1/Sensores#Luz_Exterior"/>
+        <codigo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">l2</codigo>
+        <estado rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ambiental</estado>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/1/Sensores#luz3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/Sensores#luz3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2020/1/Sensores#Luz_Exterior"/>
+        <codigo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">l3</codigo>
+        <estado rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alta</estado>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/1/Sensores#temp1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/Sensores#temp1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2020/1/Sensores#Temperatura"/>
+        <codigo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">t1</codigo>
+        <estado rdf:datatype="http://www.w3.org/2001/XMLSchema#string">frio</estado>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/1/Sensores#temp2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/Sensores#temp2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2020/1/Sensores#Temperatura"/>
+        <codigo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">t2</codigo>
+        <estado rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ambiental</estado>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2020/1/Sensores#temp3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2020/1/Sensores#temp3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2020/1/Sensores#Temperatura"/>
+        <codigo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">t3</codigo>
+        <estado rdf:datatype="http://www.w3.org/2001/XMLSchema#string">caliente</estado>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
